@@ -1,6 +1,7 @@
 import React from 'react';
 import { LocalThemedBox } from './LocalThemedBox';
 import { ThemeContext } from './ThemeProvider';
+import '../styles/App.css';
 
 const Page = () => {
       const themeToggle = useContext(ThemeContext)
