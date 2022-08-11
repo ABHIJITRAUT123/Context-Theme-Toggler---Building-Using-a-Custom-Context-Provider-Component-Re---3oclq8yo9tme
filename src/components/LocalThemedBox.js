@@ -17,5 +17,4 @@ return(
     </div>
 )
 }
-
 export { LocalThemedBox }
