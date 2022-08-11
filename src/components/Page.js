@@ -10,10 +10,10 @@ const Page = () => {
             <p id="themed-text-container" className={`txt-${themeToggle.theme}`}>
                 lorem ipsum dolor iterit n stuff
             </p>
-            <button className={`btn btn-${themeToggle.theme} txt-${themeToggle.theme}`} id="themed-button">Sup</button>
+            <button className={`btn btn-${themeToggle.theme} txt-${themeToggle.theme}`}
+             id="themed-button">Sup</button>
             <LocalThemedBox />
         </div>
     )
 }
-
 export { Page }
