@@ -3,8 +3,8 @@ import '../styles/App.css';
 import { ThemeProvider } from './ThemeProvider';
 import { ThemeToggleButton } from './ThemeToggleButton';
 import { Page } from './Page'
-const App = () => {
 
+const App = () => {
   return (
     <div id="main">
       <ThemeProvider>
@@ -14,6 +14,4 @@ const App = () => {
     </div>
   )
 }
-
-
 export default App;
