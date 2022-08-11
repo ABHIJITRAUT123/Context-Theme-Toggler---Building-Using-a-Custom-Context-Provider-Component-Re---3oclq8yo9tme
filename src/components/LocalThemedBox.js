@@ -15,6 +15,6 @@ return(
         <button className={`btn btn-${localTheme} txt-${localTheme}`} onClick={() => setLocalTheme(themeName)}
         id="global-theme-toggler">Switch to { themeName } theme</button>
     </div>
-)
+   )
 }
 export { LocalThemedBox }
