@@ -3,7 +3,7 @@ import { ThemeContext } from './ThemeProvider';
 import '../styles/App.css';
 
 const ThemeContext = React.createContext()
-const ThemeProvider = (props) =>{
+const ThemeToggleButton = (props) =>{
      const [theme, setTheme] = useState('light')
     return (
         <React.Fragment>
