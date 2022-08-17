@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/App.css';
 
 const ThemeContext = React.createContext()
 const ThemeProvider = (props) =>{
