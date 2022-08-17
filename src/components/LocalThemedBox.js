@@ -7,7 +7,7 @@ const LocalThemedBox = () => {
       const [localTheme, setLocalTheme] = useState(themeToggle.theme)
       const themeName = localTheme === 'light' ? 'dark' : 'light'
       useEffect(() => {
-      setLocalTheme(themeToggle.theme)
+            setLocalTheme(themeToggle.theme)
       },[themeToggle.theme])
 return(
     <div className={`bg-${localTheme}`} style={{width:'200px',height:'200px',border:'2px solid green'}} id="local-themed-box">
