@@ -1,16 +1,16 @@
+import React from 'react';
+
 import React, { useContext } from 'react';
 import { ThemeContext } from './ThemeProvider';
-import '../styles/App.css';
 
-const ThemeContext = React.createContext()
-const ThemeToggleButton = (props) =>{
-     const [theme, setTheme] = useState('light')
+const ThemeToggleButton = () =>{
+    const themeToggle = useContext(ThemeContext)
+    const themeName = themeToggle.theme === 'light' ? 'dark' : 'light'
     return (
-        <React.Fragment>
-            <ThemeContext.Provider value={{theme, setTheme}}>
-                {props.children}
-            </ThemeContext.Provider>
-        </React.Fragment>
+       <>
+            <button className={`btn btn-${themeToggle.theme} txt-${themeToggle.theme}`}
+            onClick={() => themeToggle.setTheme(themeName)} id="global-theme-toggler">Switch to { themeName } theme</button>
+       </>       
     )
 }
-export {ThemeProvider,ThemeContext}
+export {ThemeToggleButton} 
